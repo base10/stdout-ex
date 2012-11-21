@@ -2,12 +2,12 @@ require "spec_helper"
 
 describe Example do
   before(:each) do
-    @output = double('output')
-    @ex     = Example.new(@output)
+    @output   = double('output')
+    @example  = Example.new(@output)
   end
 
   it "should be a valid object" do
-    @ex.should be_a_kind_of Object
+    @example.should be_a_kind_of Object
   end
 
   describe "speak" do
@@ -16,7 +16,7 @@ describe Example do
     end
   
     it "should raise an Argument error when called without an arg" do
-      expect { @ex.speak }.to raise_error ArgumentError
+      expect { @example.speak }.to raise_error ArgumentError
     end
   end
 end
