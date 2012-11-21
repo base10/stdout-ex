@@ -1,8 +1,9 @@
 class Example
-  def initialize( output )
+  def initialize( output=STDOUT )
+    @output = output
   end
 
   def speak(stmt)
-    puts "Hi #{stmt}"
+    @output.puts "Hi #{stmt}"
   end
 end
