@@ -1,5 +1,5 @@
 class Example
-  def foo(stmt)
+  def speak(stmt)
     puts "Hi #{stmt}"
   end
 end

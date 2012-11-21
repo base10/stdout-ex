@@ -9,13 +9,13 @@ describe Example do
     @ex.should be_a_kind_of Object
   end
 
-  describe "foo" do
+  describe "speak" do
     it "should output a statement when called with an argument" do
       pending
     end
   
     it "should raise an Argument error when called without an arg" do
-      pending
+      pending #lambda { @ex.speak }
     end
   end
 end
