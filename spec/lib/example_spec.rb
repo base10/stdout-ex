@@ -1,8 +1,9 @@
 require "spec_helper"
 
 describe Example do
-  before do
-    @ex = Example.new
+  before(:each) do
+    @output = double('output')
+    @ex     = Example.new(@output)
   end
 
   it "should be a valid object" do
