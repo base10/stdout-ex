@@ -15,7 +15,7 @@ describe Example do
     end
   
     it "should raise an Argument error when called without an arg" do
-      pending #lambda { @ex.speak }
+      expect { @ex.speak }.to raise_error ArgumentError
     end
   end
 end
